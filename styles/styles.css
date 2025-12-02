@@ -1,3 +1,284 @@
+/* ===== 다크모드 테마 ===== */
+:root {
+  --dark-bg: #0d1117;
+  --dark-bg-secondary: #161b22;
+  --dark-bg-tertiary: #21262d;
+  --dark-text: #e6edf3;
+  --dark-text-secondary: #8b949e;
+  --dark-border: #30363d;
+  --accent-primary: #00d9ff;
+  --accent-secondary: #7c3aed;
+  --accent-gradient: linear-gradient(135deg, #00d9ff 0%, #7c3aed 100%);
+  --card-shadow: 0 8px 32px rgba(0, 217, 255, 0.1);
+}
+
 body > div:first-child {
   overflow-x: hidden;
+}
+
+/* 전체 배경 다크모드 */
+body {
+  background-color: var(--dark-bg) !important;
+  color: var(--dark-text) !important;
+}
+
+/* 네비게이션 */
+.navbar {
+  background-color: var(--dark-bg-secondary) !important;
+  border-bottom: 1px solid var(--dark-border);
+}
+
+/* Headroom 스타일 - 스크롤 시 헤더 동작 */
+.headroom {
+  will-change: transform;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease, border-bottom 0.3s ease, box-shadow 0.3s ease;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.headroom--pinned {
+  transform: translateY(0%);
+}
+
+.headroom--unpinned {
+  transform: translateY(-100%);
+}
+
+/* 맨 위에 있을 때 - 원래 헤더 스타일 */
+.headroom--top {
+  background-color: var(--dark-bg-secondary) !important;
+  border-bottom: 1px solid var(--dark-border) !important;
+  box-shadow: none !important;
+}
+
+/* 스크롤 내렸을 때 - 그림자 추가 */
+.headroom--not-top {
+  background-color: var(--dark-bg-secondary) !important;
+  border-bottom: 1px solid var(--dark-border) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* 맨 위 + pinned 상태 (다시 올라왔을 때) */
+.headroom--top.headroom--pinned {
+  box-shadow: none !important;
+}
+
+.navbar-brand {
+  color: var(--accent-primary) !important;
+}
+
+/* Hero 섹션 */
+.section-hero {
+  background: linear-gradient(180deg, var(--dark-bg-secondary) 0%, var(--dark-bg) 100%) !important;
+}
+
+/* 그라데이션 배경 오버라이드 */
+.bg-gradient-primary,
+.bg-gradient-info {
+  background: linear-gradient(135deg, var(--dark-bg-secondary) 0%, var(--dark-bg) 100%) !important;
+}
+
+/* 텍스트 색상 */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--dark-text) !important;
+}
+
+p, span, div {
+  color: var(--dark-text-secondary);
+}
+
+/* 강조 텍스트 */
+.text-primary {
+  color: var(--accent-primary) !important;
+}
+
+.text-info {
+  color: var(--accent-primary) !important;
+}
+
+/* 카드 스타일 */
+.card {
+  background-color: var(--dark-bg-secondary) !important;
+  border: 1px solid var(--dark-border) !important;
+  border-radius: 16px !important;
+  box-shadow: var(--card-shadow) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.card:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 12px 40px rgba(0, 217, 255, 0.2) !important;
+}
+
+.card-body {
+  background-color: transparent !important;
+}
+
+/* 버튼 스타일 */
+.btn-primary,
+.btn-info {
+  background: var(--accent-gradient) !important;
+  border: none !important;
+  border-radius: 50px !important;
+  padding: 12px 32px !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+}
+
+.btn-primary:hover,
+.btn-info:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(0, 217, 255, 0.3) !important;
+}
+
+/* 아이콘 버튼 */
+.btn-icon-only {
+  background-color: var(--dark-bg-tertiary) !important;
+  border: 1px solid var(--dark-border) !important;
+  color: var(--accent-primary) !important;
+}
+
+.btn-icon-only:hover {
+  background-color: var(--accent-primary) !important;
+  color: var(--dark-bg) !important;
+}
+
+/* 프로그레스 바 */
+.progress {
+  background-color: var(--dark-bg-tertiary) !important;
+  border-radius: 10px !important;
+  height: 12px !important;
+}
+
+.progress-bar {
+  background: var(--accent-gradient) !important;
+  border-radius: 10px !important;
+}
+
+/* 섹션 배경 */
+section {
+  background-color: var(--dark-bg) !important;
+}
+
+.section-shaped {
+  background-color: var(--dark-bg-secondary) !important;
+}
+
+/* 교육/경험 카드 */
+.shadow-lg {
+  box-shadow: var(--card-shadow) !important;
+}
+
+/* 배지/태그 */
+.badge {
+  background: var(--accent-gradient) !important;
+  color: var(--dark-bg) !important;
+  font-weight: 600 !important;
+  padding: 8px 16px !important;
+  border-radius: 20px !important;
+}
+
+/* 구분선 */
+hr {
+  border-color: var(--dark-border) !important;
+}
+
+/* 스킬 아이콘 */
+.icon-shape {
+  background-color: var(--dark-bg-tertiary) !important;
+  border: 1px solid var(--dark-border) !important;
+}
+
+/* 프로젝트 카드 이미지 */
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  border-bottom: 1px solid var(--dark-border);
+}
+
+/* 타이핑 애니메이션 */
+.typing-text {
+  border-right: 3px solid var(--accent-primary);
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { border-color: var(--accent-primary); }
+  50% { border-color: transparent; }
+}
+
+/* 페이드인 애니메이션 */
+.fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 글로우 효과 */
+.glow {
+  text-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
+}
+
+/* 스크롤바 커스텀 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-secondary);
+}
+
+/* 링크 스타일 */
+a {
+  color: var(--accent-primary) !important;
+  transition: color 0.3s ease !important;
+}
+
+a:hover {
+  color: var(--accent-secondary) !important;
+  text-decoration: none !important;
+}
+
+/* 콜아웃/인용구 */
+blockquote {
+  border-left: 4px solid var(--accent-primary);
+  background-color: var(--dark-bg-secondary);
+  padding: 16px;
+  border-radius: 0 8px 8px 0;
+}
+
+/* 리스트 스타일 */
+ul li::marker {
+  color: var(--accent-primary);
+}
+
+/* 푸터 */
+footer {
+  background-color: var(--dark-bg-secondary) !important;
+  border-top: 1px solid var(--dark-border);
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 20px;
+  }
 }

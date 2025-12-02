@@ -12,202 +12,164 @@ import {
 } from "./types/sections";
 
 export const greetings: GreetingsType = {
-  name: "Hanzla Tauqeer",
-  title: "Hi all, I'm Hanzla",
+  name: "김준호",
+  title: "Backend Developer",
   description:
-    "I'm a passionate Full Stack web developer with experience developing Full Stack web applications with Python, Django, React.js, and Cloud Technologies. I am strongly interested in learning new technologies and implementing them in my projects. I'm a self-motivated and hardworking individual who is always ready to learn new things and work in a team.",
-  resumeLink: "#",
+    "Spring Boot 기반 백엔드 개발자입니다. 그룹웨어, CMS 프로젝트를 진행하며 API 설계부터 배포까지 경험했습니다. Next.js 프론트엔드와 YOLO, GPT-Vision AI 연동 경험도 있습니다.",
+  resumeLink: "/resume",
 };
 
 export const openSource = {
-  githubUserName: "1hanzla100",
+  githubUserName: "zpzlzmz",
 };
 
 export const contact = {};
 
 export const socialLinks: SocialLinksType = {
-  email: "mailto:hanzla.tauqeer123@gmail.com",
-  linkedin: "https://www.linkedin.com/in/1hanzla100/",
-  github: "https://github.com/1hanzla100",
-  instagram: "https://www.instagram.com/__hanzla100",
-  // facebook: 'https://www.facebook.com/1hanzla100',
-  // twitter: 'https://twitter.com/1hanzla100',
+  email: "mailto:zpzlzmz@gmail.com",
+  github: "https://github.com/zpzlzmz",
 };
 
 export const skillsSection: SkillsSectionType = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "Skills",
+  subTitle: "Backend & Frontend & AI",
   data: [
     {
-      title: "Full Stack Development",
-      lottieAnimationFile: "/lottie/skills/fullstack.json", // Path of Lottie Animation JSON File
+      title: "Backend / Frontend",
+      lottieAnimationFile: "/lottie/skills/fullstack.json",
       skills: [
-        emoji("⚡ Building responsive Single-Page-Apps (SPA) & PWA in React.js"),
-        emoji("⚡ Building responsive static websites using Next.js"),
-        emoji("⚡ Building RESTful APIs in Django & Django REST Framework"),
+        emoji("Spring Boot 기반 RESTful API 설계 및 개발"),
+        emoji("Next.js/React 웹 애플리케이션 구축"),
+        emoji("Docker/Jenkins CI/CD 파이프라인 구축"),
       ],
       softwareSkills: [
-        {
-          skillName: "Python",
-          iconifyTag: "logos:python",
-        },
-        {
-          skillName: "Django",
-          iconifyTag: "vscode-icons:file-type-django",
-        },
-        {
-          skillName: "JavaScript",
-          iconifyTag: "logos:javascript",
-        },
-        {
-          skillName: "Reactjs",
-          iconifyTag: "vscode-icons:file-type-reactjs",
-        },
-        {
-          skillName: "Nextjs",
-          iconifyTag: "vscode-icons:file-type-light-next",
-        },
-        {
-          skillName: "AWS",
-          iconifyTag: "logos:aws",
-        },
-        {
-          skillName: "Heroku",
-          iconifyTag: "logos:heroku-icon",
-        },
-        {
-          skillName: "Github",
-          iconifyTag: "akar-icons:github-fill",
-        },
-        {
-          skillName: "Docker",
-          iconifyTag: "logos:docker-icon",
-        },
+        { skillName: "Java", iconifyTag: "logos:java" },
+        { skillName: "Spring Boot", iconifyTag: "logos:spring-icon" },
+        { skillName: "Python", iconifyTag: "logos:python" },
+        { skillName: "TypeScript", iconifyTag: "logos:typescript-icon" },
+        { skillName: "React", iconifyTag: "vscode-icons:file-type-reactjs" },
+        { skillName: "Nextjs", iconifyTag: "vscode-icons:file-type-light-next" },
+        { skillName: "MySQL", iconifyTag: "logos:mysql" },
+        { skillName: "Redis", iconifyTag: "logos:redis" },
+        { skillName: "Docker", iconifyTag: "logos:docker-icon" },
+        { skillName: "Kubernetes", iconifyTag: "logos:kubernetes" },
+        { skillName: "GitHub", iconifyTag: "akar-icons:github-fill" },
+      ],
+    },
+    {
+      title: "AI / ML",
+      lottieAnimationFile: "/lottie/skills/cloudinfra.json",
+      skills: [
+        emoji("YOLO (v8, v11) 객체 탐지 모델 연동"),
+        emoji("GPT-4o Vision 멀티모달 AI 통합"),
+        emoji("LangChain 기반 AI 챗봇 구현"),
+      ],
+      softwareSkills: [
+        { skillName: "Python", iconifyTag: "logos:python" },
+        { skillName: "TensorFlow", iconifyTag: "logos:tensorflow" },
+        { skillName: "OpenAI", iconifyTag: "simple-icons:openai" },
+        { skillName: "FastAPI", iconifyTag: "simple-icons:fastapi" },
       ],
     },
   ],
 };
 
 export const SkillBars: SkillBarsType[] = [
-  {
-    Stack: "Frontend/Design", //Insert stack or technology you have experience in
-    progressPercentage: "85", //Insert relative proficiency in percentage
-  },
-  {
-    Stack: "Backend",
-    progressPercentage: "90",
-  },
-  {
-    Stack: "Programming",
-    progressPercentage: "95",
-  },
+  { Stack: "백엔드 (Java/Spring Boot)", progressPercentage: "90" },
+  { Stack: "프론트엔드 (React/Next.js)", progressPercentage: "80" },
+  { Stack: "AI 통합 (YOLO/GPT)", progressPercentage: "75" },
+  { Stack: "DevOps (Docker/K8s)", progressPercentage: "70" },
 ];
 
 export const educationInfo: EducationType[] = [
   {
-    schoolName: "University of Central Punjab",
-    subHeader: "Bachelor of Science in Computer Science",
-    duration: "September 2017 - April 2020",
-    desc: "",
-    grade: "Grade A",
-    descBullets: [], // Array of Strings
+    schoolName: "네이버 클라우드 캠프",
+    subHeader: "웹 풀스택 개발자 과정 17기",
+    duration: "2024.12 - 2025.06",
+    desc: "Spring Boot, Next.js 기반 프로젝트 4개 수행, AI 모델 통합 경험",
+    grade: "수료 예정",
+    descBullets: [
+      "팀 프로젝트 리더 경험 (KCalculator, Dolpan-Eatso)",
+      "YOLO, GPT-Vision, LangChain AI 통합 경험",
+    ],
+  },
+  {
+    schoolName: "Columbia West College",
+    subHeader: "American Communication Program",
+    duration: "2023.03 - 2024.03",
+    desc: "미국 LA에서 영어 집중 과정 1년 이수",
+    grade: "수료",
+    descBullets: [
+      "다국적 학생들과 팀 프로젝트 경험",
+      "글로벌 커뮤니케이션 역량 강화",
+    ],
+  },
+  {
+    schoolName: "동서대학교",
+    subHeader: "컴퓨터공학부 학사",
+    duration: "2016.03 - 2022.03",
+    desc: "알고리즘, DB, 운영체제, 네트워크 등 전공 이수",
+    grade: "GPA 3.7 / 4.5",
+    descBullets: ["2021 아이디어 공모전 장려상"],
   },
 ];
 
 export const experience: ExperienceType[] = [
   {
-    role: "Django Developer",
-    company: "Meganos Software",
-    companyLogo: "/img/icons/common/meganos.png",
-    date: "Aug 2022 - Present",
-    desc: "I crafted backends for diverse web apps, APIs, and WebSockets in e-commerce, podcasts, and property management. Managed server upkeep, deployments on Linux, Heroku, and AWS S3. Implemented PyTest for automated unit and integration testing, slashing 4 hours of manual testing each sprint, fortifying a dependable and flawless code foundation.",
-  },
-  {
-    role: "Full Stack Developer",
-    company: "Duseca Software",
-    companyLogo: "/img/icons/common/duseca_software_logo.jpeg",
-    date: "Jan 2022 - Sept 2023",
-    desc: "Crafted robust mobile application backends employing Django, Python, and REST APIs. Leveraged Django REST Framework, PostgreSQL, AWS, Firebase, Stripe, and WebSocket for efficient development. Collaborated across teams to surpass client expectations. Designed intuitive UIs, empowering clients to effortlessly manage their applications with a visually captivating interface.",
-    // descBullets: [
-    // 	"Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit",
-    // 	"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    // ],
-  },
-  {
-    role: "Full Stack Developer",
-    company: "ZRTechnologies",
-    companyLogo: "/img/icons/common/zrtech.jpeg",
-    date: "Aug 2022 - Jun 2023",
-    desc: "Crafting diverse web applications, I've elevated functionality and user engagement. Spearheaded Visual Portfolio, leveraging AI for captivating presentations from parsed text. Proficiently set up and optimized applications on Linux servers, guaranteeing smooth scalability and top-notch performance for seamless user experiences.",
-  },
-  {
-    role: "Backend Developer",
-    company: "Bleed-AI",
-    companyLogo: "/img/icons/common/bleedAI.jpg",
-    date: "Sept 2021 - Oct 2021",
-    desc: "As a Django developer at Bleed AI, I integrated a computer vision AI model to process YouTube URLs on a website. I used Django Channels and Websockets to show real-time processing and implemented threading to run multiple instances of the AI model. I also used jQuery for UI rendering and deployed the website on a Heroku server.",
+    role: "Tech Support Intern",
+    company: "KW International Inc.",
+    companyLogo: "/img/icons/common/kw-international.png",
+    date: "2022.03 - 2023.03 (미국, CA)",
+    desc: "Windows AD 환경에서 사내 IT 지원, 계정 관리, 네트워크 이슈 대응. 영어/한국어 이중 언어로 다국적 직원들과 협업하며 문제 정의-해결-문서화 사이클 체득.",
   },
 ];
 
 export const projects: ProjectType[] = [
   {
-    name: "developer-portfolio",
-    desc: "Software Developer Portfolio Template built with react.js and next.js bootstrap that helps you showcase your work and skills as a software developer.",
-    github: "https://github.com/1hanzla100/developer-portfolio",
-    link: "https://developer-portfolio-1hanzla100.vercel.app/",
+    name: "KCalculator",
+    desc: "AI 기반 건강한 식단 관리 서비스. YOLO11-large + GPT-4o Vision + MySQL DB 3단계 통합 파이프라인으로 음식 인식 정확도 향상. NRF9.3 건강 점수 시스템으로 영양 균형 수치화.",
+    github: "https://github.com/food-calorie-vision/food-calorie-vision-frontend",
+    image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80",
   },
   {
-    name: "Giebo",
-    desc: "A Podcast Platform where creators can easily publish and sell their podcasts, and users can purchase with Handcash BitcoinSV, the future of fast and secure transactions.",
-    link: "https://gibeo.io/",
+    name: "Dolpan-Eatso",
+    desc: "AI 기반 스마트 한우 개체 관리 시스템 (해커톤). YOLOv8 Segmentation + ResNet으로 BCS 5~9점 분석. LangChain AI Agent 챗봇으로 자연어 명령 처리.",
+    github: "https://github.com/dolpan-eatso/dolpan-eatso-front",
+    image: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=800&q=80",
   },
   {
-    name: "O Mejor Oferta",
-    desc: "O Mejor Oferta is a mobile marketplace for buying and selling items nearby, helping users find deals on things they want and make money from items they no longer need.",
-    link: "https://play.google.com/store/apps/details?id=com.duseca.mejor_oferta",
+    name: "PostSmith",
+    desc: "Spring Boot + Next.js 기반 CMS 플랫폼. React DnD 활용 카테고리 트리 관리, Naver Cloud Kubernetes 기반 MSA 배포.",
+    github: "https://github.com/ncc-final-group",
+    link: "https://www.postsmith.kro.kr/",
+    image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&q=80",
   },
   {
-    name: "Hooligan Culture",
-    desc: "A Ecommerce Platform, where shopping meets the future! With HandCash BitcoinSV integration, you can authenticate and purchase products with ease and confidence.",
-    link: "https://hooliganculture.com/",
+    name: "Ondam",
+    desc: "Spring Boot 기반 사내 그룹웨어. SSE 실시간 알림, WebSocket 채팅, 4개 이상 파일 zip 일괄 다운로드 기능 구현.",
+    github: "https://github.com/bitcamp17-semi/ondam",
+    link: "http://223.130.151.54/",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80",
   },
 ];
 
-export const feedbacks: FeedbackType[] = [
-  {
-    name: "Syed Jamal",
-    role: "Frontend Developer at Meganos Software",
-    feedback:
-      "You were a wonderful addition to our team, alhumdulillah. I'm quite impressed with your abilities and professional practices. You approach problems from a unique perspective and always ask the right question. Finding a good teammate like Hanzla is extremely difficult. He has contributed to the growth of our organization and continues to do so. May Allah bless you with everything you desire.",
-  },
-  {
-    name: "Wajahat Malek",
-    role: "CEO at Duseca Software",
-    feedback:
-      "Hanzla has a deep understanding of web development technologies and is adept at using them to build scalable, robust, and secure web applications. He has worked on various projects, ranging from small-scale to large-scale, and has shown his ability to work collaboratively with others while maintaining a high level of productivity and quality. Hanzla is a pleasure to work with, and I have no doubt that he will be an asset to any team or organization. I highly recommend Hanzla for any Full Stack Django, React.js, or Blockchain development projects, and I wish him all the best in his future endeavors.",
-  },
-  {
-    name: "Zaid Zaffar",
-    role: "CEO at ZR Technologies",
-    feedback:
-      "Very skilled at what he does and has an in depth knowledge of Django and he's always ready to handle any challenges thrown at him. He's been a valuable member of my team and i look forward to working with him in the years to come",
-  },
-];
+export const feedbacks: FeedbackType[] = [];
 
-// See object prototype on /types/section.ts page
 export const seoData: SEODataType = {
-  title: "Hanzla Tauqeer",
+  title: "김준호 | 풀스택 개발자",
   description: greetings.description,
-  author: "Hanzla Tauqeer",
-  image: "https://avatars.githubusercontent.com/u/59178380?v=4",
-  url: "https://developer-portfolio-1hanzla100.vercel.app",
+  author: "김준호",
+  image: "https://avatars.githubusercontent.com/u/zpzlzmz",
+  url: "https://junho-portfolio.vercel.app",
   keywords: [
-    "Hanzla",
-    "Hanzla Tauqeer",
-    "@1hanzla100",
-    "1hanzla100",
-    "Portfolio",
-    "Hanzla Portfolio ",
-    "Hanzla Tauqeer Portfolio",
+    "김준호",
+    "Junho Kim",
+    "zpzlzmz",
+    "포트폴리오",
+    "개발자",
+    "풀스택",
+    "Spring Boot",
+    "Next.js",
+    "AI",
   ],
 };

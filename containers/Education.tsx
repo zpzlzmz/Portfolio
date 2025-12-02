@@ -8,16 +8,20 @@ const Education = () => {
   return (
     educationInfo && (
       <Fade bottom duration={2000}>
-        <section className="section pb-0 bg-gradient-info my-5">
+        <section className="section pb-0 my-5" style={{
+          background: 'linear-gradient(135deg, #161b22 0%, #0d1117 100%)'
+        }}>
           <Container>
             <div className="d-flex px-3">
               <div>
-                <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-info">
-                  <i className="ni ni-books text-info" />
+                <div className="icon icon-lg icon-shape shadow rounded-circle" style={{
+                  background: 'linear-gradient(135deg, #00d9ff 0%, #7c3aed 100%)'
+                }}>
+                  <i className="ni ni-books" style={{ color: '#0d1117' }} />
                 </div>
               </div>
               <div className="pl-4">
-                <h4 className="display-3 text-white">Education</h4>
+                <h4 className="display-3" style={{ color: '#e6edf3' }}>학력</h4>
               </div>
             </div>
             <Row className="row-grid align-items-center">
@@ -39,7 +43,7 @@ const Education = () => {
               x="0"
               y="0"
             >
-              <polygon className="fill-white" points="2560 0 2560 100 0 100" />
+              <polygon style={{ fill: '#0d1117' }} points="2560 0 2560 100 0 100" />
             </svg>
           </div>
         </section>
